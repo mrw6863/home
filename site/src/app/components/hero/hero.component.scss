@@ -1,0 +1,26 @@
+// hero.component.scss
+.hero {
+    padding: 48px 24px;
+    
+    .intro {
+      font-size: 1.25rem;
+      font-weight: normal;
+      text-transform: lowercase;
+      color: #484554;
+      margin: 0;
+    }
+    
+    .name {
+      font-size: 3.5rem; // Increased size
+      font-weight: normal;
+      text-transform: lowercase;
+      color: #484554;
+      margin: 16px 0;
+    }
+    
+    .bio {
+      color: #6B6B6B;
+      line-height: 1.4; // Reduced line height
+      text-transform: lowercase;
+    }
+  }

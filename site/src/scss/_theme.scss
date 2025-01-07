@@ -12,13 +12,49 @@ body {
   padding: 0;
 }
 
+// shared card styles (could be in a _card.scss partial)
 .card {
-  background-color: white;
-  padding: 20px;
-  border-radius: $border-radius;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  margin-bottom: 16px;
-}
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 280px;
+    max-width: 280px;
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    
+    h4 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0;
+      text-transform: lowercase;
+      color: $text-primary;
+    }
+    
+    .subtitle {
+      color: $text-secondary;
+      margin: 8px 0;
+      text-transform: lowercase;
+    }
+    
+    .content {
+      flex: 1; 
+      text-transform: lowercase;
+    }
+    
+    .learn-more {
+      margin-top: auto; 
+      background-color: #846B9E;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-size: 0.875rem;
+      cursor: pointer;
+      text-transform: lowercase;
+      align-self: flex-start; 
+    }
+  }
 
 .learn-more-button {
   background-color: $primary-purple;
