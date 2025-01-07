@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { argbFromHex, hexFromArgb, themeFromSourceColor, TonalPalette } from '@material/material-color-utilities';
 
 @Component({
   selector: 'app-toolbar',
@@ -11,9 +10,6 @@ import { argbFromHex, hexFromArgb, themeFromSourceColor, TonalPalette } from '@m
   imports: [MatToolbarModule, MatIconModule]
 })
 export class ToolbarComponent {
-  m3ThemeColorsJSON = themeFromSourceColor(argbFromHex('#6750A4'), []);
-  // primary = hexFromArgb(theme.schemes.light.primary);
-  // primary98 = TonalPalette.fromInt(primary).tone(98);
 
 
   onMenuClick(): void {

@@ -1,4 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+// styles.scss
+@use './scss/variables' as *;
+@use './scss/main';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  background-color: $background-purple;
+  color: $text-primary;
+  margin: 0;
+  font-family: $font-family;
+}
+
+html, body { 
+  height: 100%; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $text-primary;
+}
+
+// Card grid layout
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}

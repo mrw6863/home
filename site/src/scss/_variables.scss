@@ -1,0 +1,25 @@
+// src/scss/_variables.scss
+@use 'sass:color';
+
+// Theme colors
+$primary-purple: #846B9E;  // Button color
+$background-purple: #E5D5F5;  // Light purple background
+$toolbar-purple: #F5EEFC;     // Lighter purple for toolbar
+$text-primary: #484554;  // Dark text color
+$text-secondary: #6B6B6B;  // Secondary text color
+
+// Base variables
+$background-color: $background-purple;
+$text-color: $text-primary;
+$border-radius: 8px;  // Cards have rounded corners
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-size: 16px;
+$button-padding: 8px 16px;
+
+// Export for JavaScript usage if needed
+:export {
+  primaryPurple: $primary-purple;
+  backgroundPurple: $background-purple;
+  textPrimary: $text-primary;
+  textSecondary: $text-secondary;
+}
